@@ -1,5 +1,4 @@
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&display=swap);
-@import url(https://fonts.googleapis.com/css?family=Dosis:200,300,400,500,600,700,800&display=swap);
 
 
 
@@ -10,13 +9,13 @@ body {
 }
 .display-1 {
   font-family: 'Open Sans', sans-serif;
-  font-size: 3.5rem;
+  font-size: 3.4rem;
 }
 .display-1 > .mbr-iconfont {
-  font-size: 5.6rem;
+  font-size: 5.44rem;
 }
 .display-2 {
-  font-family: 'Dosis', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-size: 2rem;
 }
 .display-2 > .mbr-iconfont {
@@ -30,14 +29,14 @@ body {
   font-size: 1.28rem;
 }
 .display-5 {
-  font-family: 'Dosis', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-size: 1.4rem;
 }
 .display-5 > .mbr-iconfont {
   font-size: 2.24rem;
 }
 .display-7 {
-  font-family: 'Dosis', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-size: 1rem;
 }
 .display-7 > .mbr-iconfont {
@@ -50,9 +49,9 @@ body {
 /* 0.65 - min scale variable, may vary */
 @media (max-width: 768px) {
   .display-1 {
-    font-size: 2.8rem;
-    font-size: calc( 1.875rem + (3.5 - 1.875) * ((100vw - 20rem) / (48 - 20)));
-    line-height: calc( 1.4 * (1.875rem + (3.5 - 1.875) * ((100vw - 20rem) / (48 - 20))));
+    font-size: 2.72rem;
+    font-size: calc( 1.8399999999999999rem + (3.4 - 1.8399999999999999) * ((100vw - 20rem) / (48 - 20)));
+    line-height: calc( 1.4 * (1.8399999999999999rem + (3.4 - 1.8399999999999999) * ((100vw - 20rem) / (48 - 20))));
   }
   .display-2 {
     font-size: 1.6rem;
@@ -531,7 +530,7 @@ a:hover {
 }
 /* Scroll to top button*/
 #scrollToTop a {
-  background: #000000;
+  background: #333333;
 }
 #scrollToTop a i:before {
   background: #ffffff;
@@ -541,7 +540,7 @@ a:hover {
   border-right: 2px solid #ffffff;
 }
 .mbr-arrow {
-  background-color: #000000;
+  background-color: #333333;
   opacity: .5;
   transition: .3s;
 }
@@ -552,7 +551,7 @@ a:hover {
   opacity: .7;
 }
 .form-control {
-  font-family: 'Dosis', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-size: 1rem;
 }
 .form-control > .mbr-iconfont {
