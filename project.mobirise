@@ -65,7 +65,7 @@
     "botbody": "",
     "siteUrl": "https://indebio.github.io/rivierenwijk/",
     "versionFirst": "4.7.7",
-    "uniqCompNum": 18,
+    "uniqCompNum": 19,
     "versionPublish": "4.12.3",
     "screenshot": "screenshot.png",
     "robotsText": "User-agent: *\nDisallow: /cgi-bin\n",
@@ -123,6 +123,60 @@
           "_global": false,
           "_once": false,
           "_params": {}
+        },
+        {
+          "alias": "mobirise4-blocks/components",
+          "_isSecondary": true,
+          "typeCompatible": "type",
+          "_styles": {
+            "& when not (@fullScreen)": {
+              "padding-top": "(@paddingTop * 15px)",
+              "padding-bottom": "(@paddingBottom * 15px)"
+            },
+            "& when (@bg-type = 'color')": {
+              "background-color": "@bg-value"
+            },
+            "& when (@bg-type = 'image')": {
+              "background-image": "url(@bg-value)"
+            },
+            ".card-wrapper": {
+              "z-index": "3",
+              ".mbr-section-title": {
+                "letter-spacing": "1px",
+                "transition": "all 2.5s cubic-bezier(0, 0.74, 0.52, 1.2)"
+              }
+            },
+            "&:hover": {
+              ".mbr-section-title": {
+                "letter-spacing": "10px"
+              }
+            },
+            ".full-link": {
+              "position": "absolute",
+              "top": "0",
+              "left": "0",
+              "width": "100%",
+              "height": "100%",
+              "font-size": "0",
+              "z-index": "2"
+            },
+            ".popup-btn": {
+              "&.card-wrapper": {
+                "z-index": "1 !important"
+              }
+            },
+            "H2": {
+              "color": "#263b70"
+            }
+          },
+          "_name": "extFeatures66",
+          "_customHTML": "<section group=\"Features\" class=\"extFeatures popup-btn-cards\" data-bg-video=\"{{bg.type == 'video'&&bg.value.url}}\" mbr-class=\"{'mbr-parallax-background': bg.parallax,'mbr-fullscreen': fullScreen}\" plugins=\"mbr-popup-btns\">\n\n    <mbr-parameters>\n    <!--Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\">\n        <input type=\"checkbox\" title=\"Show Arrow\" name=\"showArrow\" condition=\"fullScreen\">\n        <input type=\"text\" title=\"Link\" name=\"linkValue\" value>\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"15\" step=\"1\" value=\"3\" condition=\"fullScreen == false\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"15\" step=\"1\" value=\"3\" condition=\"fullScreen == false\">\n        <input type=\"range\" inline title=\"Min Height\" name=\"blockHeight\" min=\"1\" max=\"25\" step=\"1\" value=\"4\" condition=\"fullScreen == false\">\n        <input type=\"checkbox\" title=\"Show Title\" name=\"showTitle\" checked>\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Background Image\" value=\"../_images/background1.jpg\" parallax>\n            <input type=\"color\" title=\"Background Color\" value=\"#ffffff\" selected>\n            <input type=\"video\" title=\"Background Video\" value=\"https://www.youtube.com/watch?v=36YgDDJ7XSc\">\n        </fieldset>\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#ff0000\" condition=\"overlay&&bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.6\" condition=\"overlay&&bg.type !== 'color'\">\n    <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div class=\"mbr-overlay\" mbr-if=\"overlay&&bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\">\n    </div>\n    <a class=\"full-link\" href=\"{{linkValue}}\"></a>\n    <div class=\"container-fluid card-wrapper\">\n        <div class=\"row justify-content-center align-items-center\" mbr-style=\"{'min-height':blockHeight + 'vw'}\">\n             <div class=\"col-xl-10 col-lg-10 col-md-12 text-block\">\n                <h2 mbr-if=\"showTitle\" class=\"mbr-section-title mbr-fonts-style mbr-white mbr-bold\" mbr-theme-style=\"display-5\"><b>#SupportYourLocals #DankJeWel #StayStrong</b></h2>                 \n             </div>\n        </div>\n    </div>\n</section>",
+          "_cid": "rWK6XZDuR8",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {},
+          "_anchor": "extFeatures66-i"
         },
         {
           "_styles": {

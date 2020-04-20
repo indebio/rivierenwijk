@@ -642,6 +642,36 @@ section.lazy-placeholder:after {
     width: 100% !important;
   }
 }
+.cid-rWK6XZDuR8 {
+  padding-top: 45px;
+  padding-bottom: 45px;
+  background-color: #ffffff;
+}
+.cid-rWK6XZDuR8 .card-wrapper {
+  z-index: 3;
+}
+.cid-rWK6XZDuR8 .card-wrapper .mbr-section-title {
+  letter-spacing: 1px;
+  transition: all 2.5s cubic-bezier(0, 0.74, 0.52, 1.2);
+}
+.cid-rWK6XZDuR8:hover .mbr-section-title {
+  letter-spacing: 10px;
+}
+.cid-rWK6XZDuR8 .full-link {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  font-size: 0;
+  z-index: 2;
+}
+.cid-rWK6XZDuR8 .popup-btn.card-wrapper {
+  z-index: 1 !important;
+}
+.cid-rWK6XZDuR8 H2 {
+  color: #263b70;
+}
 .cid-rWK1KKtMtA {
   padding-top: 0px;
   padding-bottom: 0px;
