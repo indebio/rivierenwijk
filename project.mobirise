@@ -80,7 +80,7 @@
     "": "on",
     "pwa-switcher": false,
     "cssOptimize": true,
-    "lazyLoad": true,
+    "lazyLoad": false,
     "lazyType": "placeholder",
     "imageResize": true
   },
