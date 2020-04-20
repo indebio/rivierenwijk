@@ -648,13 +648,13 @@ section.lazy-placeholder:after {
   padding-bottom: 0px;
 }
 .cid-rWK1KKtMtA .stats-item:hover span {
-  color: #ffbc00;
+  color: #ffffff;
 }
 .cid-rWK1KKtMtA .stats-item {
   padding: 80px 20px;
 }
 .cid-rWK1KKtMtA .stats-item:nth-child(2n) {
-  background-color: #fcff00;
+  background-color: #ff8f00;
 }
 .cid-rWK1KKtMtA .stats-item:nth-child(odd) {
   background-color: #ff0000;
@@ -676,7 +676,7 @@ section.lazy-placeholder:after {
 }
 @media (max-width: 768px) and (min-width: 577px) {
   .cid-rWK1KKtMtA .stats-item:first-child {
-    background: #fcff00;
+    background: #ff8f00;
   }
   .cid-rWK1KKtMtA .stats-item:nth-child(2n) {
     background: #ff0000;
@@ -685,12 +685,12 @@ section.lazy-placeholder:after {
     background: #ff0000 none repeat scroll 0 center;
   }
   .cid-rWK1KKtMtA .stats-item:last-child {
-    background: #fcff00;
+    background: #ff8f00;
   }
 }
 .cid-rWK1KKtMtA .counter {
   text-align: center;
-  color: #000000;
+  color: #ffffff;
 }
 .cid-rWK1KKtMtA .mbr-card-title,
 .cid-rWK1KKtMtA .mbr-iconfont {
