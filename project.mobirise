@@ -195,7 +195,7 @@
               "background-color": "@blockColor2"
             },
             ".stats-item > span": {
-              "transition": "all 0.3s ease-in-out"
+              "transition": "all 0.1s ease-in-out"
             },
             ".mbr-iconfont": {
               "font-size": "50px"
@@ -241,7 +241,9 @@
           "_protectedParams": [],
           "_global": false,
           "_once": false,
-          "_params": {}
+          "_params": {},
+          "_PHPplaceholders": [],
+          "_JSplaceholders": []
         },
         {
           "_styles": {
