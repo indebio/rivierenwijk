@@ -672,58 +672,58 @@ section.lazy-placeholder:after {
 .cid-rWK6XZDuR8 H2 {
   color: #263b70;
 }
-.cid-rWNs70kYpt {
-  padding-top: 30px;
-  padding-bottom: 30px;
+.cid-rWNyZ5L7xC {
+  padding-top: 60px;
+  padding-bottom: 60px;
   background-color: #ffffff;
 }
-.cid-rWNs70kYpt .card-icon {
-  font-size: 72px;
-  color: #efefef;
-  transition: color 0.3s;
+.cid-rWNzvy5Gum {
+  padding-top: 90px;
+  padding-bottom: 90px;
+  background-color: #ff4100;
 }
-.cid-rWNs70kYpt .icon2 {
-  color: #ffffff;
+.cid-rWNzvy5Gum .mbr-iconfont {
+  font-size: 34px;
+  transition: color .3s;
 }
-.cid-rWNs70kYpt .card-title {
-  font-weight: 600;
-  letter-spacing: 1px;
+.cid-rWNzvy5Gum .mbr-section-title {
+  margin: 0;
 }
-.cid-rWNs70kYpt p {
-  font-weight: 400;
+.cid-rWNzvy5Gum .underline {
+  margin-top: -0.5rem;
+  margin-bottom: -0.5rem;
 }
-.cid-rWNs70kYpt .line {
-  width: 35px;
-  height: 3px;
+.cid-rWNzvy5Gum .underline .line {
+  width: 3rem;
+  height: 2px;
+  background: #444444;
   display: inline-block;
-  background: #ffffff;
-  margin-bottom: 1.5rem;
-  transition: background 0.3s;
 }
-.cid-rWNs70kYpt .line2 {
-  background: #ffffff;
+.cid-rWNzvy5Gum .card-img {
+  text-align: left;
 }
-.cid-rWNs70kYpt .card-wrapper {
-  padding: 2.5rem 2rem;
-  transition: background 0.3s;
-  background: #ff0000;
+.cid-rWNzvy5Gum .row-item {
+  padding-bottom: 2rem;
 }
-.cid-rWNs70kYpt .card-wrapper:hover .link-ico {
-  background-color: #efefef;
-  border-color: #efefef;
-  color: white;
+.cid-rWNzvy5Gum .row-item:hover .card-img .mbr-iconfont {
+  color: #ffffff !important;
 }
-.cid-rWNs70kYpt .card2 {
-  background: #ff4100;
+@media (max-width: 767px) {
+  .cid-rWNzvy5Gum .card-img,
+  .cid-rWNzvy5Gum .mbr-text,
+  .cid-rWNzvy5Gum .mbr-card-title,
+  .cid-rWNzvy5Gum .mbr-section-subtitle,
+  .cid-rWNzvy5Gum .mbr-section-title,
+  .cid-rWNzvy5Gum .underline {
+    text-align: center !important;
+  }
 }
-.cid-rWNs70kYpt .card-title,
-.cid-rWNs70kYpt .card-ico,
-.cid-rWNs70kYpt .line-wrap {
+.cid-rWNzvy5Gum .mbr-text {
+  color: #ffffff;
   text-align: center;
 }
-.cid-rWNs70kYpt .mbr-text,
-.cid-rWNs70kYpt .card-link {
-  text-align: center;
+.cid-rWNzvy5Gum .mbr-section-subtitle {
+  color: #ffffff;
 }
 .cid-qUmCH8Q344 {
   padding-top: 0px;
