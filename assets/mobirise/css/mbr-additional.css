@@ -674,13 +674,13 @@ section.lazy-placeholder:after {
   text-align: center;
 }
 .cid-rWNyZ5L7xC {
-  padding-top: 60px;
-  padding-bottom: 60px;
+  padding-top: 30px;
+  padding-bottom: 30px;
   background-color: #ffffff;
 }
 .cid-rWNB8mM5QL {
-  padding-top: 60px;
-  padding-bottom: 60px;
+  padding-top: 30px;
+  padding-bottom: 30px;
   background-color: #ffffff;
 }
 .cid-qUmCH8Q344 {
@@ -688,7 +688,7 @@ section.lazy-placeholder:after {
   padding-bottom: 0px;
 }
 .cid-qUmCH8Q344 .stats-item:hover span {
-  color: #ffbc00;
+  color: #263b70;
 }
 .cid-qUmCH8Q344 .stats-item {
   padding: 80px 20px;
@@ -737,12 +737,66 @@ section.lazy-placeholder:after {
   text-align: center;
   color: #263b70;
 }
+.cid-rWNWANgk31 {
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+.cid-rWNWANgk31 .stats-item:hover span {
+  color: #263b70;
+}
+.cid-rWNWANgk31 .stats-item {
+  padding: 80px 20px;
+}
+.cid-rWNWANgk31 .stats-item:nth-child(2n) {
+  background-color: #ff8600;
+}
+.cid-rWNWANgk31 .stats-item:nth-child(odd) {
+  background-color: #ff8600;
+}
+.cid-rWNWANgk31 .stats-item > span {
+  transition: all 0.3s ease-in-out;
+}
+.cid-rWNWANgk31 .mbr-iconfont {
+  font-size: 50px;
+}
+.cid-rWNWANgk31 .heading {
+  margin: 20px 0;
+  color: #232323;
+}
+.cid-rWNWANgk31 .container {
+  min-width: 100%;
+  padding: 0;
+  margin: 0 auto;
+}
+@media (max-width: 768px) and (min-width: 577px) {
+  .cid-rWNWANgk31 .stats-item:first-child {
+    background: #ff8600;
+  }
+  .cid-rWNWANgk31 .stats-item:nth-child(2n) {
+    background: #ff8600;
+  }
+  .cid-rWNWANgk31 .stats-item:nth-child(0n+3) {
+    background: #ff8600 none repeat scroll 0 center;
+  }
+  .cid-rWNWANgk31 .stats-item:last-child {
+    background: #ff8600;
+  }
+}
+.cid-rWNWANgk31 .counter {
+  text-align: center;
+  color: #000000;
+}
+.cid-rWNWANgk31 .mbr-card-title,
+.cid-rWNWANgk31 .mbr-iconfont {
+  text-align: center;
+  color: #263b70;
+}
 .cid-rNVT7SPgZr {
   padding-top: 0px;
   padding-bottom: 0px;
 }
 .cid-rNVT7SPgZr .stats-item:hover span {
-  color: #ffbc00;
+  color: #263b70;
 }
 .cid-rNVT7SPgZr .stats-item {
   padding: 80px 20px;
@@ -796,7 +850,7 @@ section.lazy-placeholder:after {
   padding-bottom: 0px;
 }
 .cid-rpUiZqb5qK .stats-item:hover span {
-  color: #ffbc00;
+  color: #263b70;
 }
 .cid-rpUiZqb5qK .stats-item {
   padding: 80px 20px;
