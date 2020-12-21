@@ -675,10 +675,11 @@ section.lazy-placeholder:after {
 }
 .cid-sjaOZyBFX1 {
   background: #ffffff;
+  padding-top: 0px;
+  padding-bottom: 0px;
 }
 .cid-sjaOZyBFX1 .image-block {
   margin: auto;
-  width: 100% !important;
 }
 @media (max-width: 768px) {
   .cid-sjaOZyBFX1 .image-block {
