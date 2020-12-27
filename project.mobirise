@@ -29,13 +29,13 @@
         "arrowColor": "#333333"
       },
       "additionalSetColors": [
+        "#279e64",
         "#fcff00",
         "#f8f000",
         "#dbad54",
         "#263b70",
         "#526c3c",
-        "#ff0000",
-        "#ff8600"
+        "#ff0000"
       ]
     },
     "path": "@PROJECT_PATH@",
@@ -66,7 +66,7 @@
     "botbody": "",
     "siteUrl": "https://indebio.github.io/rivierenwijk/",
     "versionFirst": "4.7.7",
-    "uniqCompNum": 37,
+    "uniqCompNum": 38,
     "versionPublish": "4.12.4",
     "screenshot": "screenshot.png",
     "robotsText": "User-agent: *\nDisallow: /cgi-bin\n",
@@ -124,6 +124,75 @@
           "_customHTML": "<section class=\"content4\">\n\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\">\n\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" value=\"0\" step=\"1\" condition=\"fullWidth==false\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" value=\"0\" step=\"1\" condition=\"fullWidth==false\">\n\n        <input type=\"range\" inline title=\"Width\" name=\"imageSize\" min=\"20\" max=\"100\" value=\"82\" step=\"1\" condition=\"fullWidth==false\">\n\n        <input type=\"color\" title=\"Background Color\" name=\"bgColor\" value=\"#ffffff\" condition=\"fullWidth==false\">\n\n        <input type=\"color\" title=\"Color 2\" name=\"color2\" value=\"#149dcc\" condition=\"gradientBg\">\n    <!-- End block parameters -->\n    </mbr-parameters>\n\n    <figure class=\"mbr-figure\" mbr-class=\"{'container':fullWidth==false}\">\n            <div class=\"image-block\" mbr-style=\"{'width':imageSize+'%'}\">\n                <img src=\"@PROJECT_PATH@/assets/images/dankjewel-supportyourlocals-utrecht-1153x1153.jpg\" width=\"1400\" alt=\"rivierenwijk-dichterswijk-logo-utrecht\" title=\"rivierenwijk-dichterswijk-logo-utrecht\">\n            </div>\n    </figure>\n</section>",
           "_cid": "qUmyUFHMzl",
           "_anchor": "image2-1",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        },
+        {
+          "_name": "title2",
+          "_styles": {
+            "& when not (@fullScreen)": {
+              "padding-top": "(@paddingTop * 15px)",
+              "padding-bottom": "(@paddingBottom * 15px)"
+            },
+            "& when (@bg-type = \"color\")": {
+              "background-color": "@bg-value",
+              "& when (@isGradientBg)": {
+                "background": "linear-gradient(to bottom, @bg-value, @color2)"
+              }
+            },
+            "& when (@bg-type = \"image\")": {
+              "background-image": "url(@bg-value)"
+            },
+            ".content-inner": {
+              ".left-content": {
+                "display": "block",
+                ".mbr-section-title": {
+                  "color": "#ffffff",
+                  "margin-bottom": "11px"
+                },
+                ".mbr-text": {
+                  "color": "#ffffff"
+                }
+              },
+              ".right-content": {
+                "display": "block",
+                ".mbr-text": {
+                  "color": "#ffffff",
+                  "font-weight": "500",
+                  "margin-bottom": "17px",
+                  "letter-spacing": ".02em"
+                },
+                ".mbr-section-btn": {
+                  ".btn": {
+                    "border-radius": "30px",
+                    "padding": "18px 42px !important",
+                    "&-white": {
+                      "color": "#000000 !important",
+                      "&:hover": {
+                        "background-color": "@successColor !important",
+                        "border-color": "@successColor !important"
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "@media (max-width: 991px)": {
+              ".content-inner": {
+                "justify-content": "center !important"
+              },
+              "*": {
+                "text-align": "center"
+              }
+            }
+          },
+          "_customHTML": "<section class=\"title2\" group=\"Title\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{'mbr-fullscreen': fullScreen,\n                    'mbr-parallax-background': bg.parallax}\">\n\n    <mbr-parameters>\n        <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <header>Size</header>\n        <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\">\n        <input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\">\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"25\" step=\"1\" value=\"14\" condition=\"fullScreen == false\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"25\" step=\"1\" value=\"15\" condition=\"fullScreen == false\">\n        <header>Show/Hide</header>\n\n        <input type=\"checkbox\" title=\"Title\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Text\" name=\"showText\">\n        <input type=\"checkbox\" title=\"Button\" name=\"showButtons\" checked>\n\n        <header>Background</header>\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" value=\"@PROJECT_PATH@/assets/images/img-20191219-161317-2000x2000.jpeg\" title=\"Image\" selected parallax>\n            <input type=\"color\" value=\"#279e64\" title=\"Color\">\n            <input type=\"video\" value=\"https://www.youtube.com/watch?v=9morbKMwCu4\" title=\"Video\">\n        </fieldset>\n        <input type=\"checkbox\" title=\"Gradient Bg\" name=\"isGradientBg\" condition=\"bg.type=='color'\">\n        <input type=\"color\" title=\"Color 2\" name=\"color2\" value=\"#0053f9\" condition=\"bg.type=='color' && isGradientBg\" selected>\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n        <input type=\"color\" title=\"Color\" name=\"overlayColor\" value=\"#000000\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.01\" value=\"0.65\" condition=\"overlay && bg.type !== 'color'\">\n        <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\">\n    </div>\n\n    <div class=\"align-center\" mbr-class=\"{'container-fluid': fullWidth, 'container': !fullWidth }\">\n        <div class=\"row\">\n            <div class=\"col-lg-12 col-md-12\">\n                <div class=\"content-inner d-flex justify-content-between flex-wrap align-center\">\n                    <div class=\"left-content\">\n                        <h1 class=\"mbr-fonts-style mbr-section-title mbr-bold align-left\" mbr-theme-style=\"display-2\" mbr-if=\"showTitle\" data-app-selector=\".content-inner .left-content .mbr-section-title, .mbr-section-btn\">&nbsp;</h1>\n                        <p class=\"mbr-text align-left mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".content-inner .left-content .mbr-text, .mbr-section-btn\">\n                            Lights heaven above images blessed given tools\n                        </p>\n                    </div>\n                    <div class=\"right-content\">\n                        <p class=\"mbr-text align-center mbr-fonts-style\" mbr-theme-style=\"display-4\" mbr-if=\"showText\" data-app-selector=\".content-inner .right-content .mbr-text, .mbr-section-btn\">\n                            More Information\n                        </p>\n                        <div class=\"buttons-wrap w-100\">\n                            <div class=\"mbr-section-btn align-center \" mbr-buttons mbr-theme-style=\"display-4\" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove\"><a class=\"btn btn-md btn-secondary\" href=\"https://www.facebook.com/rivierenwijkutrecht/posts/3818772748172771\" data-app-placeholder=\"Type Text\">GA NAAR FACEBOOK 5X OLIEBOLLEN GIVEAWAY ACTIE</a></div>\n                        </div>\n                    </div>\n\n                </div>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_anchor": "title2-11",
+          "_isUserblock": true,
+          "_sourceTheme": "cleanm4",
+          "_cid": "skpVvkHrzy",
           "_protectedParams": [],
           "_global": false,
           "_once": false,
