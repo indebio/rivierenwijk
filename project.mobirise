@@ -66,7 +66,7 @@
     "botbody": "",
     "siteUrl": "https://indebio.github.io/rivierenwijk/",
     "versionFirst": "4.7.7",
-    "uniqCompNum": 38,
+    "uniqCompNum": 41,
     "versionPublish": "4.12.4",
     "screenshot": "screenshot.png",
     "robotsText": "User-agent: *\nDisallow: /cgi-bin\n",
@@ -96,7 +96,7 @@
         "title": "Link in de Bio Rivierenwijk Utrecht website.",
         "meta_descr": "Linktree voor in de Bio van Instagram - Rivierenwijk en Dichterswijk Utrecht - De winkeliers vereniging in Utrecht op de Rijnlaan. ",
         "header_custom": "",
-        "footer_custom": "",
+        "footer_custom": "<div id=\"fb-root\"></div>\n<script async defer src=\"https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.2\"></script>",
         "html_before": "",
         "meta_image": "@PROJECT_PATH@/assets/images/rivierenwijk-utrecht-logo-1200x631.jpeg"
       },
@@ -197,6 +197,20 @@
           "_global": false,
           "_once": false,
           "_params": {}
+        },
+        {
+          "_customTemplate": true,
+          "_afterNavbarItem": false,
+          "_customHTML": "<div class=\"fb-post\" data-href=\"https://www.facebook.com/rivierenwijkutrecht/posts/3818772748172771\"></div>",
+          "_customCSS": "/* Type valid CSS here */\n\ndiv {\n  padding: 80px 0;\n  color: #777;\n  text-align: center;\n}\np {\n  font-size: 60px;\n  color: #777;\n}",
+          "alias": "code-editor",
+          "_tags": [
+            "Extension"
+          ],
+          "_name": "pro.custom-html",
+          "_anchor": "custom-html-14",
+          "_PHPplaceholders": [],
+          "_JSplaceholders": []
         },
         {
           "alias": "mobirise4-blocks/components",
